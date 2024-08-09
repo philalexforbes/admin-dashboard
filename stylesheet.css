@@ -77,6 +77,13 @@ h1 {
     color: white;
 }
 
-.card{
+p, h3{ font-family: Roboto-Medium;}
+
+p { color: rgb(44, 43, 43)}
+
+.projectCard{
+    background-color: white;
+    border: 1px white solid;
+    border-radius: 5px;
     /* border-color: rgb(240 180 41); */
 }
