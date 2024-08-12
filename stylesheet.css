@@ -20,11 +20,22 @@ html{
     grid-column: 2 / 3;
 }
 
+.userPic, .trendingPic{
+    width: 50px;
+    height: 50px;
+}
+
+.userPicture {
+    width: 75px;
+    height: 75px;
+}
+
 .sidebar{
     background-color: rgb(25 146 212);
     display: grid;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    align-items: flex-start;
 }
 
 .dashboard{
@@ -48,7 +59,7 @@ html{
 
 .navigation > div {
     display: flex;
-    gap: 25px;
+    gap: 1em;
     align-items: center;
     margin-left: 30px;
 }
@@ -57,7 +68,8 @@ html{
     background-color: rgb(226 232 240);
     display: grid;
     border: 1px black solid;
-    grid-column: 2/3;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 3fr 1fr;
 }
 
 div > div > img {
@@ -77,13 +89,68 @@ h1 {
     color: white;
 }
 
+.greetingHeader{
+    color: black;
+}
+
 p, h3{ font-family: Roboto-Medium;}
 
 p { color: rgb(44, 43, 43)}
+
+.projects {
+    margin-left: 2.5em;
+    grid-row: 1/3;
+}
+
+.cardContainers {
+    display: grid;
+    gap: 2.5em;
+    grid-template-columns: 1fr 1fr;
+}
 
 .projectCard{
     background-color: white;
     border: 1px white solid;
     border-radius: 5px;
-    /* border-color: rgb(240 180 41); */
+    box-shadow: -10px 0px 0px 0px rgb(240 180 41);
+    text-align: left;
+    width: 400px;
+    height: 250px;
+    display: grid;
+}
+
+.announcements{
+    display: grid;
+    grid-row: 1/2;
+}
+
+.announcementsContainer{
+    background-color: white;
+    border: 1px white solid;
+    border-radius: 5px;
+}
+
+.trending{
+    display: grid;
+}
+
+.trendingContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: white;
+    border: 1px white solid;
+    border-radius: 5px;
+}
+
+.trendingCard{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.trendingPic{
+    grid-column: 1/2;
+}
+
+.trendingUserBlurb{
+    grid-column: 2/3;
 }
