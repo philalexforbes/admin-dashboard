@@ -113,7 +113,6 @@ html{
     display: grid;
     grid-template-rows: 110px 300px 250px;
     grid-row: 1 / 3;
-    align-items: flex-start;
     gap: 1em;
 }
 
@@ -185,7 +184,7 @@ p { color: rgb(44, 43, 43)}
 
 .cardContainers {
     display: grid;
-    gap: 2.5em;
+    gap: 2em;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -194,8 +193,8 @@ p { color: rgb(44, 43, 43)}
     border: 1px white solid;
     border-radius: 5px;
     box-shadow: -10px 0px 0px 0px rgb(240 180 41); 
-    width: 400px;
-    height: 250px;
+    width: 425px;
+    height: 225px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -214,7 +213,9 @@ p { color: rgb(44, 43, 43)}
 .cardBtns{
     grid-column: 2/3;
     align-items: center;
-    display: grid;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-end;
     grid-template-columns: repeat(3, 50px);
 }
 
@@ -222,6 +223,7 @@ p { color: rgb(44, 43, 43)}
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 400px;
+    padding-left: 10px;
 }
 
 .announcements{
@@ -234,28 +236,36 @@ p { color: rgb(44, 43, 43)}
     border-radius: 5px;
     display: grid;
     grid-template-rows: 120px 120px 120px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 25px;
 }
 
 .announcementCard{
     display: grid;
     grid-template-rows: 30px 100px;
-    margin-left: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
+
     box-shadow: 0px 1px 0px 0px rgb(44, 43, 43, 10%);
 }
 
 .announcementCard:nth-child(3){
-    box-shadow: 0px 0px 0px 0px rgb(44, 43, 43, 10%);
+    box-shadow: 0px 0px 0px 0px;
 }
 
 .announcementText, .projectText, .trendingText{
     color: rgb(44, 43, 43, 50%);
 }
 
+.announcementCard > h3 {
+    font-size: 16px;
+}
+
+.announcementText{
+    font-size: 14px;
+}
+
 .trending{
-    padding-top: 35px;
+    padding-top: 15px;
     margin-right: 2.5em;
     height: 400px;
 }
